@@ -1,14 +1,14 @@
 import { Box, Grid, Container, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
-import FooterLogo from 'assets/logo.svg';
+import FooterLogo from 'assets/logo.png';
 import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
-        <Grid sx={styles.widgets}>
+        {/* <Grid sx={styles.widgets}>
           {data.widgets.map((item) => (
             <Box
               key={`footer-widget--key${item.id}`}
@@ -21,11 +21,11 @@ export default function Footer() {
               </Box>
             </Box>
           ))}
-        </Grid>
+        </Grid> */}
         {/* End of footer widgets area */}
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            <Image src={FooterLogo} alt="Logo" />
+            <Image src={FooterLogo} alt="Logo"  width={300} height={50}/>
           </Link>
           <Box sx={styles.footer.menus}>
             <nav>
@@ -40,7 +40,7 @@ export default function Footer() {
             </nav>
           </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} Lorem Ipsum
+            Copyright by {new Date().getFullYear()} DevOps Evolve
           </Text>
         </Box>
       </Container>

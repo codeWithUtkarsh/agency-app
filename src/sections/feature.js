@@ -10,35 +10,35 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Automated Deployment',
+    title: 'Automated Deployment',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'Say goodbye to manual deployments and hello to seamless automation. Our solution automates the deployment process, reducing errors and accelerating time-to-market.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Scalability',
+    title: 'Scalability',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'Scale your infrastructure effortlessly to meet growing demands. Our solution is designed to accommodate your evolving needs without compromising performance or stability.',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Security Hardening',
+    title: 'Security Hardening',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'Protect your code and pipeline from cyber threats with our robust security measures. From vulnerability scanning to access control, we\'ve got you covered',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'AI/ML Integration',
+    title: 'AI/ML Integration',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
-  },
+      'Harness the power of artificial intelligence and machine learning to optimize your DevOps processes. Predictive analytics, anomaly detection, and intelligent automation—all at your fingertips.',
+  }
 ];
 
 export default function Feature() {

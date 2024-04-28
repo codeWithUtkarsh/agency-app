@@ -18,36 +18,49 @@ import Secure from '../assets/services/secure.svg';
 
 const data = {
   subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  // title: 'Business Goals Achieved with Design',
   features: [
     {
       id: 1,
-      imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      imgSrc: Secure,
+      altText: 'Streamlined Processes',
+      title: 'Streamlined Processes',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Optimize workflows, automate tasks, and implement best practices for innovation-driven growth, eliminating inefficiencies.',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'Cost Reduction',
+      title: 'Cost Reduction',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Reduce costs by minimizing downtime, errors, and infrastructure expenses through streamlined DevOps pipelines.',
+    },
+    {
+      id: 3,
+      imgSrc: Secure,
+      altText: 'Security',
+      title: 'Security',
+      text:
+        'Harden the security of your code and pipeline with our comprehensive security solutions.',
+    },
+    {
+      id: 4,
+      imgSrc: Secure,
+      altText: 'Future-Proofing with AI/ML',
+      title: 'Future-Proofing with AI/ML',
+      text:
+        'Our visionary approach integrates AI and machine learning models into your DevOps workflows, paving the way for smarter, data-driven decision-making.',
     },
   ],
-};
-
-export default function ServiceSection() {
+};export default function ServiceSection() {
   return (
     <Box sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
+        {/* Replace the thumbnail with the provided image */}
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="Thumbnail" />
-          <Box sx={styles.shapeBox}>
-            <Image src={shapePattern} alt="Shape" />
-          </Box>
+          <img src="https://cretive-agency.netlify.app/static/media/Frame.33e98a43d45c0c82f896.png" alt="Thumbnail" style={styles.image} />
+    
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
@@ -69,6 +82,7 @@ export default function ServiceSection() {
     </Box>
   );
 }
+
 
 const styles = {
   coreFeature: {
@@ -95,6 +109,15 @@ const styles = {
       height: '100%',
       width: '100%',
     },
+    position: 'relative',
+    zIndex: 1,
+  },
+  image: {
+    // Add depth by applying box shadow
+    boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
+    borderRadius: '8px', // Optionally, you can add border radius for rounded corners
+    width: '100%', // Adjust the width as needed
+    height: 'auto', // Maintain aspect ratio
   },
   shapeBox: {
     position: 'absolute',

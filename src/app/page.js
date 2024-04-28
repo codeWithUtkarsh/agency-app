@@ -4,7 +4,7 @@ import theme from 'theme';
 import { StickyProvider } from '../contexts/app/app.provider';
 import Banner from 'sections/banner';
 import Layout from 'components/layout';
-import KeyFeature from 'sections/key-feature';
+// import KeyFeature from 'sections/key-feature';
 import ServiceSection from 'sections/service-section';
 import Feature from 'sections/feature';
 import CoreFeature from 'sections/core-feature';
@@ -21,16 +21,16 @@ export default function Home() {
       <StickyProvider>
         <Layout>
           <Banner/>
-          <KeyFeature />
+          {/* <KeyFeature /> */}
           <ServiceSection />
           <Feature/>
-          <CoreFeature/>
-          <WorkFlow/>
+          {/* <CoreFeature/> */}
           <Package/>
-          <TeamSection/>
-          <TestimonialCard/>
-          <BlogSection/>
-          <Subscribe/>
+          <WorkFlow/>
+          {/* <TeamSection/> */}
+          {/* <TestimonialCard/> */}
+          {/* <BlogSection/> */}
+          {/* <Subscribe/> */}
         </Layout>
       </StickyProvider>
     </ThemeUIProvider>

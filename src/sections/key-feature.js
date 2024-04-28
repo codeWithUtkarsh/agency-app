@@ -41,30 +41,30 @@ const data = [
   },
 ];
 
-export default function KeyFeature() {
-  return (
-    <Box sx={{ variant: 'section.keyFeature' }} id="feature">
-      <Container>
-        <SectionHeader
-          slogan="Whats the function"
-          title="Meet the feature of product"
-        />
+// export default function KeyFeature() {
+//   return (
+//     <Box sx={{ variant: 'section.keyFeature' }} id="feature">
+//       <Container>
+//         <SectionHeader
+//           slogan="Whats the function"
+//           title="Meet the feature of product"
+//         />
 
-        <Grid sx={styles.grid}>
-          {data.map((item) => (
-            <FeatureCardColumn
-              key={item.id}
-              src={item.imgSrc}
-              alt={item.altText}
-              title={item.title}
-              text={item.text}
-            />
-          ))}
-        </Grid>
-      </Container>
-    </Box>
-  );
-}
+//         <Grid sx={styles.grid}>
+//           {data.map((item) => (
+//             <FeatureCardColumn
+//               key={item.id}
+//               src={item.imgSrc}
+//               alt={item.altText}
+//               title={item.title}
+//               text={item.text}
+//             />
+//           ))}
+//         </Grid>
+//       </Container>
+//     </Box>
+//   );
+// }
 
 const styles = {
   grid: {
