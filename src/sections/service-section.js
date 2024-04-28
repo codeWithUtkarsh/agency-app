@@ -17,7 +17,7 @@ import Smart from '../assets/services/smart.svg';
 import Secure from '../assets/services/secure.svg';
 
 const data = {
-  subTitle: 'our services',
+  // subTitle: 'our services',
   // title: 'Business Goals Achieved with Design',
   features: [
     {

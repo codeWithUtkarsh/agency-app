@@ -10,9 +10,12 @@ export default [
   {
     path: 'pricing',
     label: 'Pricing',
-  },
-  {
-    path: 'testimonial',
-    label: 'Testimonial',
-  },
+  },{
+    path: 'howitworks',
+    label: 'How it works?',
+  }
+  // {
+  //   path: 'testimonial',
+  //   label: 'Testimonial',
+  // },
 ];

@@ -43,7 +43,7 @@ const data = [
 
 export default function Feature() {
   return (
-    <Box sx={{ variant: 'section.feature' }}>
+    <Box id="feature" sx={{ variant: 'section.feature' }}>
       <Container>
         <SectionHeader
           slogan="Quality features"

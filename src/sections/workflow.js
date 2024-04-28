@@ -33,7 +33,7 @@ const data = [
 
 export default function WorkFlow() {
   return (
-    <Box sx={styles.workflow}>
+    <Box id="howitworks" sx={styles.workflow}>
       <Container>
         <SectionHeader
           // slogan="Whats the function"
